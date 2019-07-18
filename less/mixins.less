@@ -1,1 +1,36 @@
 // Mixins in here
+.nav-text(@font-style, @size){
+    font-family: @font-style;
+    font-size: @size;
+}
+
+.nav-box(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border-style(@top, @bottom){
+    border-top: @top;
+    border-bottom: @bottom;
+}
+
+.button-style(@background, @font, @width){
+    display: block;
+    background-color: @background;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font;
+}
+
+.mobile-display(@flex-d){
+    flex-direction: @flex-d;
+}
+
+.mobile-text-size(@fontsize){
+    font-size:@fontsize;
+}
